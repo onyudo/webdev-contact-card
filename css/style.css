@@ -93,6 +93,7 @@ a:hover {
 
     .card-container {
         flex-direction: row;
+        justify-content: space-evenly;
         max-width: 768px;
         gap: 3em;
     }
