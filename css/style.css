@@ -53,16 +53,16 @@ a:hover {
     flex-direction: column;
 }
 
-.name-title h1, .company-phone h1 {
-    font-family: Georgia,"Times New Roman",Times,serif;
-    color: #49413B;
-    line-height: 1;
-}
-
 .name-title, .company-phone {
     border-left: 3px dotted #F6616A;
     padding-left: 5px;
     margin: 0 0 1.6rem;
+}
+
+.name-title h1, .company-phone h1 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color: #49413B;
+    line-height: 1;
 }
 
 .name-title p, .company-phone p {
@@ -106,6 +106,10 @@ a:hover {
 
     .details-container {
         flex-direction: column;
+    }
+
+    .name-title, .company-phone {
+        margin: 0;
     }
 
     p {
