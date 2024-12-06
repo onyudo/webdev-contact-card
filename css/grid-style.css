@@ -1,0 +1,115 @@
+@import url("reset.css");
+@import url("engraversgothic.css");
+
+body {
+    background-color: #F6616A;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+a {
+    color: #49413B;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #49413B;
+    border-bottom: 2px solid #49413B;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    background-image: url("../images/bground_cream_plaid.gif");
+}
+
+.card-photo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 1.6rem 0 1.6rem 0;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+}
+
+.name-title, .company-phone {
+    border-left: 3px dotted #F6616A;
+    padding-left: 5px;
+    margin: 0 0 1.6rem;
+}
+
+.name-title h1, .company-phone h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    color: #49413B;
+    line-height: 1;
+}
+
+.name-title p, .company-phone p {
+    font-family: EngraversGothicBT, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #49413B;
+    line-height: 1;
+}
+
+/* Responsive Design */
+@media (width >= 500px) {
+    .card-container {
+        max-width: 500px;
+    }
+
+    .details-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em;
+    }
+}
+
+@media (width >= 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        max-width: 768px;
+        gap: 3em;
+    }
+
+    .card-photo img {
+        width: 300px;
+        height: 300px;
+        margin: 1.6rem 0;
+    }
+
+    .details-container {
+        grid-template-columns: 1fr;
+    }
+
+    .name-title, .company-phone {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
